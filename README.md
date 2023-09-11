@@ -70,7 +70,7 @@ StackEdit stores your files in your browser, which means all your files are auto
 ### Create a Person
 
 **Request:**
-POST http://ngblaze.pythonanywhere.com/api/persons/
+POST https://ngblaze.pythonanywhere.com/api/persons/
 Content-Type: application/json
 
 {
@@ -86,7 +86,7 @@ Content-Type: application/json
 ### Retrieve a Person
 
 **Request:**
-GET http://ngblaze.pythonanywhere.com/api/persons/2/
+GET https://ngblaze.pythonanywhere.com/api/persons/2/
 **Response:**
 {
     "id": 2,
@@ -95,7 +95,7 @@ GET http://ngblaze.pythonanywhere.com/api/persons/2/
 }
 ### Update a Person
 **Request:**
-PUT http://ngblaze.pythonanywhere.com/api/persons/2/
+PUT https://ngblaze.pythonanywhere.com/api/persons/2/
 Content-Type: application/json
 
 {
@@ -110,14 +110,14 @@ Content-Type: application/json
 }
 ### Delete a Person
 **Request:**
-DELETE http://ngblaze.pythonanywhere.com/api/persons/2/
+DELETE https://ngblaze.pythonanywhere.com/api/persons/2/
 **Response:** No content (204 No Content)
 ### Dynamic Parameter Handling
 
 **Retrieve a Person by Name**
 
 **Request:**
-GET http://ngblaze.pythonanywhere.com/api/persons/John%20Doe/
+GET https://ngblaze.pythonanywhere.com/api/persons/John%20Doe/
 **Response:**
 {
     "id": 1,
