@@ -1,3 +1,10 @@
+## UML IMAGE
+![UML Image](https://github.com/NgBlaze/HNGx_Stage_2/blob/main/CRUD.drawio.png)
+
+
+
+
+
 # API Documentation
 
 This document provides an overview of the REST API endpoints, standard request and response formats, sample usage, known limitations, and instructions for setting up and deploying the API.
@@ -135,7 +142,4 @@ GET http://localhost:8000/api/persons/John%20Doe/
 5.  Install project dependencies: `pip install -r requirements.txt`
 6.  Apply database migrations: `python manage.py migrate`
 7.  Start the development server: `python manage.py runserver`
-
-## UML IMAGE
-![UML Image](https://github.com/NgBlaze/HNGx_Stage_2/blob/main/CRUD.drawio.png)
 
