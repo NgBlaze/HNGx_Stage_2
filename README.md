@@ -135,3 +135,7 @@ GET http://localhost:8000/api/persons/John%20Doe/
 5.  Install project dependencies: `pip install -r requirements.txt`
 6.  Apply database migrations: `python manage.py migrate`
 7.  Start the development server: `python manage.py runserver`
+
+## UML IMAGE
+![UML Image](https://github.com/NgBlaze/HNGx_Stage_2/blob/main/CRUD.drawio.png)
+
