@@ -109,3 +109,6 @@ python manage.py migrate
 python manage.py runserver
 
 ```
+
+[UML_Image](https://github.com/NgBlaze/HNGx_Stage_2/blob/main/CRUD.drawio.png)
+
