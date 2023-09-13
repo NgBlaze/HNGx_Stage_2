@@ -1,5 +1,3 @@
-![UML Image](https://github.com/NgBlaze/HNGx_Stage_2/blob/main/CRUD.drawio.png)
-
 # API Documentation
 
 This document provides an overview of the REST API endpoints, standard request and response formats, sample usage, known limitations, and instructions for setting up and deploying the API.
@@ -97,4 +95,4 @@ python manage.py migrate
 python manage.py runserver
 
 
-
+![UML Image](https://github.com/NgBlaze/HNGx_Stage_2/blob/main/CRUD.drawio.png)
