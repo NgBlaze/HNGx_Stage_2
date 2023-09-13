@@ -1,24 +1,20 @@
-from django.shortcuts import get_object_or_404
+# myapi/views.py
 from rest_framework import generics
 from .models import Person
 from .serializers import PersonSerializer
 
 
 class PersonListCreateView(generics.ListCreateAPIView):
-    queryset = Person.objects.all()
     serializer_class = PersonSerializer
 
+    def get_queryset(self):
+        return Person.objects.none()
 
-class PersonRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Person.objects.all()
-    serializer_class = PersonSerializer
+    def perform_create(self, serializer):
+        serializer.save()
 
 
-class PersonByNameView(generics.RetrieveUpdateDestroyAPIView):
+class PersonRetrieveUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Person.objects.all()
     serializer_class = PersonSerializer
     lookup_field = 'name'
-
-    def get_object(self):
-        name = self.kwargs.get('name')
-        return get_object_or_404(Person, name=name)

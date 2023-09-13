@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h669r-*wi8f7r_*u#xzx291(j7vzdlx9d%lj&wldinjmzadp2^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['NgBlaze.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
